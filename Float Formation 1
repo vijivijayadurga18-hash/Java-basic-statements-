@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Read input as float
+
+        float value = sc.nextFloat();
+
+        // 1. Default float printing (Java shows 6 decimal places by default for float)
+
+        System.out.printf("%f\n", value);
+
+        // 2. 4 decimal places
+
+        System.out.printf("%.4f\n", value);
+
+        // 3. 2 decimal places
+
+        System.out.printf("%.2f\n", value);
+
+        // 4. Rounded integer
+
+        System.out.printf("%.0f\n", value);
+
+    }
+
+}
