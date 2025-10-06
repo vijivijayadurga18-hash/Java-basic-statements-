@@ -1,0 +1,31 @@
+Topic: USING MATH CLASS FUNCTIONS
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner AB = new Scanner(System.in);
+
+        double f = AB.nextDouble();   // Read floating number
+
+        int n1 = AB.nextInt();        // Integer for sqrt
+
+        int n2 = AB.nextInt();        // Base for power
+
+        int n3 = AB.nextInt();        // Exponent for power
+
+        System.out.println((int)Math.floor(f));   // Floor value
+
+        System.out.println((int)Math.ceil(f));    // Ceil value
+
+        System.out.println((int)Math.sqrt(n1));   // Square root
+
+        System.out.println((int)Math.pow(n2, n3));// Power value
+
+        AB.close();
+
+    }
+
+}
