@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ExecuteString {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        
+
+        // Read input string (name)
+
+        String name = sc.nextLine();
+
+        
+
+        // Display the custom message
+
+        System.out.println("Hai " + name + "!    Welcome to Programming Language...");
+
+    }
+
+}
