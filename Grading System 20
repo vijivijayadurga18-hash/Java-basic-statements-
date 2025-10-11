@@ -1,0 +1,75 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Input section
+
+        String name = sc.nextLine();
+
+        int m1 = sc.nextInt();
+
+        int m2 = sc.nextInt();
+
+        int m3 = sc.nextInt();
+
+        int m4 = sc.nextInt();
+
+        int m5 = sc.nextInt();
+
+        // Calculate total and average
+
+        int total = m1 + m2 + m3 + m4 + m5;
+
+        float average = total / 5.0f;
+
+        // Determine grade
+
+        String grade;
+
+        if (average == 100) {
+
+            grade = "S";
+
+        } else if (average >= 90) {
+
+            grade = "A";
+
+        } else if (average >= 80) {
+
+            grade = "B";
+
+        } else if (average >= 70) {
+
+            grade = "C";
+
+        } else if (average >= 60) {
+
+            grade = "D";
+
+        } else if (average >= 50) {
+
+            grade = "E";
+
+        } else {
+
+            grade = "Fail";
+
+        }
+
+        // Output
+
+        System.out.println("Name of the Student:" + name);
+
+        System.out.println("Total Mark:" + total);
+
+        System.out.println("Average Mark:" + average);
+
+        System.out.println("Grade Mark:" + grade);
+
+    }
+
+}
