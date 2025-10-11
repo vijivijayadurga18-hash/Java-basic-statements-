@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class PalindromeCheck {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int num, original, reversed = 0, remainder;
+
+        // Input
+
+        num = sc.nextInt();
+
+        // Check if number is a 3-digit number
+
+        if (num < 100 || num > 999) {
+
+            System.out.println("Invalid Input");
+
+            return;
+
+        }
+
+        // Store the original number
+
+        original = num;
+
+        // Reverse the number
+
+        while (num != 0) {
+
+            remainder = num % 10;
+
+            reversed = reversed * 10 + remainder;
+
+            num /= 10;
+
+        }
+
+        // Check for palindrome
+
+        if (original == reversed)
+
+            System.out.println("palindrome");
+
+        else
+
+            System.out.println("not palindrome");
+
+        sc.close();
+
+    }
+
+}
