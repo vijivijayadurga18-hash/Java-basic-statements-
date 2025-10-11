@@ -1,0 +1,97 @@
+import java.io.*;
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+        int a=sc.nextInt();
+
+        int b=sc.nextInt();
+
+       char op=sc.next().charAt(0);double result;
+
+        switch(op){
+
+                case'+':
+
+                result=a+b;
+
+                System.out.println("Addition of two number is " +  result);
+
+                break;
+
+                case'-':
+
+                result=a-b;
+
+                System.out.println("Subtraction of two number is " +  result);
+
+                break;
+
+                case'*':
+
+                result=a*b;
+
+                System.out.println("Multiplication of two number is " +  result);
+
+                break;
+
+                case'/':
+
+                if(b!=0){
+
+                    result=(double)a/b;
+
+                    System.out.println("Divison of two number is " +  result);
+
+                      }
+
+                else{
+
+                    System.out.println("Invalid output");
+
+                }
+
+                
+
+                break;
+
+                case'%':
+
+                if(b!=0){
+
+                     result=(double)a%b;
+
+                    System.out.println("Modulo of two number is " +  result);
+
+                      }
+
+                else{
+
+                    System.out.println("Invalid output");
+
+                }
+
+                
+
+                break;
+
+            default:
+
+                System.out.println("Invalid Input");
+
+                
+
+        }
+
+        
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+}
