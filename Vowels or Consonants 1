@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class VowelOrConsonant {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        
+
+        // Read a single character
+
+        char ch = sc.next().charAt(0);
+
+        
+
+        // Check if input is an alphabet
+
+        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+
+            char lowerCh = Character.toLowerCase(ch);
+
+            
+
+            // Check for vowels
+
+            if (lowerCh == 'a' || lowerCh == 'e' || lowerCh == 'i' || lowerCh == 'o' || lowerCh == 'u') {
+
+                System.out.println("The Character " + ch + " is Vowel");
+
+            } else {
+
+                System.out.println("The Character " + ch + " is Consonant");
+
+            }
+
+        } else {
+
+            System.out.println("Invalid Input");
+
+        }
+
+    }
+
+}
