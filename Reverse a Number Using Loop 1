@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        long n = sc.nextLong();
+
+        if (n < 0) {
+
+            System.out.println("Invalid Input");
+
+            return;
+
+        }
+
+        long reverse = 0;
+
+        while (n > 0) {
+
+            long digit = n % 10;
+
+            reverse = reverse * 10 + digit;
+
+            n = n / 10;
+
+        }
+
+        System.out.println(reverse);
+
+    }
+
+}
