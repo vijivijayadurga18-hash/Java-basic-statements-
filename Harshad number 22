@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();  // Read the input number
+
+        int temp = num;
+
+        int sum = 0;
+
+        // Calculate the sum of digits
+
+        while (temp > 0) {
+
+            sum += temp % 10;
+
+            temp /= 10;
+
+        }
+
+        // Check if the number is divisible by sum of its digits
+
+        if (num % sum == 0) {
+
+            System.out.println("Harshad Number");
+
+        } else {
+
+            System.out.println("Not Harshad Number");
+
+        }
+
+    }
+
+}
