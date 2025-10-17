@@ -1,0 +1,51 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+
+        int temp = num;
+
+        int sum = 0;
+
+        int count = 0;
+
+        // Count digits
+
+        while (temp > 0) {
+
+            count++;
+
+            temp /= 10;
+
+        }
+
+        // Check if number has more than 2 digits
+
+        if (count <= 2) {
+
+            System.out.println("Invalid Input");
+
+        } else {
+
+            temp = num; // reset temp
+
+            while (temp > 0) {
+
+                sum += temp % 10; // add last digit
+
+                temp /= 10;       // remove last digit
+
+            }
+
+            System.out.println("Sum of digit is " + sum);
+
+        }
+
+    }
+
+}
