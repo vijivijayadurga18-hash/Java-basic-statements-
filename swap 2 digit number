@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+
+        if (num < 0) {
+
+            System.out.println("STDOUT");
+
+            return;
+
+        }
+
+        String str = String.valueOf(num);
+
+        if (str.length() < 2) {
+
+            System.out.println("STDOUT");
+
+            return;
+
+        }
+
+        char first = str.charAt(0);
+
+        char second = str.charAt(1);
+
+        System.out.println("" + second + first);
+
+    }
+
+}
